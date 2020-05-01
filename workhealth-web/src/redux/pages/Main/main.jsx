@@ -299,7 +299,7 @@ class Main extends Component {
                 }
                 <div className={classes.buttonWrapper}>
                     <Button variant="outlined" className={classes.closeButton} onClick={() => this.closeModal()}>Close</Button>
-                    <Button variant="contained" className={classes.downloadButton} onClick={() => this.downloadPdf(this.state.isTableModal)}>Download</Button>
+                    {/* <Button variant="contained" className={classes.downloadButton} onClick={() => this.downloadPdf(this.state.isTableModal)}>Download</Button> */}
                 </div>
             </div> 
         )}    
