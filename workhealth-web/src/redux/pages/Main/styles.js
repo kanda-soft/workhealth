@@ -38,16 +38,16 @@ export const styles = () => ({
         paddingLeft: '12px'
     },
     redDot: {
-        height: '10px',
-        width: '10px',
+        height: '15px',
+        width: '15px',
         backgroundColor: '#F92400',
         borderRadius: "50%",
         display: 'inline-block',
         margin: '15px'
     },
     greenDot: {
-        height: '10px',
-        width: '10px',
+        height: '15px',
+        width: '15px',
         backgroundColor: '#36B626',
         borderRadius: "50%",
         display: 'inline-block',
@@ -71,23 +71,10 @@ export const styles = () => ({
         paddingLeft: 0
     },
     modalWrapper: {
-        width: '100%',
+        width: '340px',
         paddingLeft: '24px',
         paddingRight: '24px',
         paddingTop: '24px'
-    },
-    reportWrapper: {
-        paddingBottom: '12px'
-    },
-    questionnaireList: {
-        display: 'flex',
-        justifyContent: 'space-between',
-    },
-    answerRed: {
-        color: '#F92400'
-    },
-    answerGreen: {
-        color: 'green'
     },
     warning: {
         color: '#F92400'

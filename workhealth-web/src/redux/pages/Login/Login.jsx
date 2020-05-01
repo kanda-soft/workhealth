@@ -1,13 +1,15 @@
 import React, { PureComponent } from 'react';
-import { createForm } from 'rc-form';
-import { connect } from 'react-redux';
-import { compose } from 'recompose';
-import { Link } from 'react-router-dom';
-
 import {clearAuthFail, loginUser} from './actions';
-import styles from './Login.module.scss';
-import {selectAuthError} from "./selectors";
+import { faKey, faUser } from '@fortawesome/free-solid-svg-icons'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
 import Logo from "../../../images/logo.png";
+import { compose } from 'recompose';
+import { connect } from 'react-redux';
+import { createForm } from 'rc-form';
+import {selectAuthError} from "./selectors";
+import styles from './Login.module.scss';
 
 class Login extends PureComponent {
 
@@ -35,9 +37,9 @@ class Login extends PureComponent {
       <section className={styles.wrapper}>
         <form onSubmit={this.login} className={styles.form}>
           <div className={styles.logoWrapper}>
-            <img className={styles.logoImg} src={Logo} alt="Logo" />
+            <img className={styles.logoImg} src={Logo} alt="Logo"/>
           </div>
-          <p className={styles.inputTitle}>Username</p>
+          <p className={styles.inputTitle}><FontAwesomeIcon icon={faUser} /> Username</p>
           {form.getFieldDecorator('username', {
             initialValue: '',
           })(
@@ -48,7 +50,7 @@ class Login extends PureComponent {
               type="text"
             />
           )}
-          <p className={styles.inputTitle}>Password</p>
+          <p className={styles.inputTitle}><FontAwesomeIcon icon={faKey} /> Password</p>
           {form.getFieldDecorator('password', {
             initialValue: '',
           })(
