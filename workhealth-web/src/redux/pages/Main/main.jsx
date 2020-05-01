@@ -1,22 +1,23 @@
+import { CAN_NOT_VISIT_WORK, CAN_VISIT_WORK, USER_TITLE } from '../../../constants/constants';
 import React, { Component } from 'react';
-import api from '../../../api';
-import moment from 'moment';
-import { connect } from 'react-redux';
-import { compose } from 'recompose';
-import { withStyles } from '@material-ui/styles';
+
+import { API_BASE_ADDRESS } from '../../../api/api';
+import Button from '@material-ui/core/Button';
+import Container from '@material-ui/core/Container';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
 import { Layout } from '../../../components';
-import confirmBtn from '../../../images/confirmBtn.png';
-import declineBtn from '../../../images/declineBtn.png';
-import { styles } from './styles';
-import pdfGenerator from '../../../utils/pdfGenerator';
-import { USER_TITLE, CAN_VISIT_WORK, CAN_NOT_VISIT_WORK } from '../../../constants/constants';
 import SelfScreeningTemplate from '../../../components/PdfBlanks/SelfScreeningTemplate/SelfScreeningTemplate';
-import { API_BASE_ADDRESS } from '../../../api/api';
+import api from '../../../api';
+import { compose } from 'recompose';
+import confirmBtn from '../../../images/confirmBtn.png';
+import { connect } from 'react-redux';
+import declineBtn from '../../../images/declineBtn.png';
+import moment from 'moment';
+import pdfGenerator from '../../../utils/pdfGenerator';
+import { styles } from './styles';
+import { withStyles } from '@material-ui/styles';
 
 const TIME_FORMAT = 'MMMM Do YYYY'
 
