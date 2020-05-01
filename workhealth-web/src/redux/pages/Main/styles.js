@@ -105,7 +105,7 @@ export const styles = () => ({
         fontWeight: 'bold' 
     },
     dialogTitleText: {
-        color: '#027FFF'
+        color: '#fefefe'
     },
     downloadButton: {
         color: 'white',
